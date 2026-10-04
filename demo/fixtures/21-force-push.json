@@ -1,0 +1,6 @@
+{
+  "name": "force push",
+  "expect": "deny",
+  "branch": "fix/timeout",
+  "event": { "tool_name": "Bash", "tool_input": { "command": "git push --force origin fix/timeout" } }
+}

@@ -1,0 +1,5 @@
+{
+  "name": "write .env.example",
+  "expect": "allow",
+  "event": { "tool_name": "Write", "tool_input": { "file_path": "config/.env.example", "content": "API_SIGNING_KEY=\n" } }
+}

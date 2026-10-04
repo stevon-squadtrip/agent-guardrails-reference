@@ -1,0 +1,6 @@
+{
+  "name": "commit message mentions destroy prod",
+  "expect": "allow",
+  "branch": "docs/runbook",
+  "event": { "tool_name": "Bash", "tool_input": { "command": "git commit -m \"docs: never run infractl env destroy --env prod\"" } }
+}

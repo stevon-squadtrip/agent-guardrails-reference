@@ -1,0 +1,6 @@
+{
+  "name": "commit on main",
+  "expect": "deny",
+  "branch": "main",
+  "event": { "tool_name": "Bash", "tool_input": { "command": "git commit -m \"fix timeout\"" } }
+}

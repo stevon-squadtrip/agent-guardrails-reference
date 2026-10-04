@@ -1,0 +1,5 @@
+{
+  "name": "rm -rf outside the repo",
+  "expect": "deny",
+  "event": { "tool_name": "Bash", "tool_input": { "command": "rm -rf ~/projects" } }
+}

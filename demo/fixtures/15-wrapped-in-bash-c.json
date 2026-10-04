@@ -1,0 +1,5 @@
+{
+  "name": "destroy prod, wrapped in bash -c",
+  "expect": "deny",
+  "event": { "tool_name": "Bash", "tool_input": { "command": "bash -c \"node example-infra/infractl.mjs env destroy --env prod\"" } }
+}

@@ -1,0 +1,5 @@
+{
+  "name": "read prod status",
+  "expect": "allow",
+  "event": { "tool_name": "Bash", "tool_input": { "command": "node example-infra/infractl.mjs status --env prod" } }
+}

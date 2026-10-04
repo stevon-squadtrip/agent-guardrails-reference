@@ -1,0 +1,5 @@
+{
+  "name": "sed -i on .claude/settings.json",
+  "expect": "ask",
+  "event": { "tool_name": "Bash", "tool_input": { "command": "sed -i 's/guard.mjs/noop.mjs/' .claude/settings.json" } }
+}

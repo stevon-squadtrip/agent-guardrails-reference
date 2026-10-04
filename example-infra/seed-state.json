@@ -1,0 +1,25 @@
+{
+  "builds": {
+    "40": { "healthy": true },
+    "41": { "healthy": true },
+    "42": { "healthy": true },
+    "43": { "healthy": false, "note": "readiness probe times out after 5s" }
+  },
+  "envs": {
+    "dev": {
+      "slots": { "live": { "build": 43 } },
+      "config": { "MAX_CONNECTIONS": "20", "LOG_LEVEL": "debug", "REQUEST_TIMEOUT_MS": "10000" },
+      "secrets": { "API_SIGNING_KEY": { "version": 2 } }
+    },
+    "staging": {
+      "slots": { "live": { "build": 42 } },
+      "config": { "MAX_CONNECTIONS": "50", "LOG_LEVEL": "info", "REQUEST_TIMEOUT_MS": "5000" },
+      "secrets": { "API_SIGNING_KEY": { "version": 4 } }
+    },
+    "prod": {
+      "slots": { "live": { "build": 41 }, "standby": { "build": 40 } },
+      "config": { "MAX_CONNECTIONS": "100", "LOG_LEVEL": "warn", "REQUEST_TIMEOUT_MS": "5000" },
+      "secrets": { "API_SIGNING_KEY": { "version": 7 } }
+    }
+  }
+}

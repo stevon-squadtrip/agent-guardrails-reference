@@ -1,0 +1,5 @@
+{
+  "name": "deploy straight to prod live slot",
+  "expect": "deny",
+  "event": { "tool_name": "Bash", "tool_input": { "command": "node example-infra/infractl.mjs deploy --env prod --build 42 --slot live" } }
+}

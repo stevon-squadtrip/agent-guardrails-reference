@@ -1,0 +1,5 @@
+{
+  "name": "command the guard cannot parse",
+  "expect": "ask",
+  "event": { "tool_name": "Bash", "tool_input": { "command": "echo \"unterminated" } }
+}

@@ -1,0 +1,5 @@
+{
+  "name": "swap prod, no health check yet",
+  "expect": "deny",
+  "event": { "tool_name": "Bash", "tool_input": { "command": "node example-infra/infractl.mjs swap --env prod" } }
+}

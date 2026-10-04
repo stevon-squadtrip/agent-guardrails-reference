@@ -1,0 +1,6 @@
+{
+  "name": "new branch then commit, from main",
+  "expect": "allow",
+  "branch": "main",
+  "event": { "tool_name": "Bash", "tool_input": { "command": "git switch -c fix/timeout && git commit -m \"fix timeout\"" } }
+}

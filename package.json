@@ -1,0 +1,19 @@
+{
+  "name": "agent-guardrails-reference",
+  "version": "1.0.0",
+  "description": "Enforced guardrails for a coding agent working against infrastructure: block, ask, precondition, audit.",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "demo": "node demo/run-demo.mjs",
+    "test": "node --test \"tests/*.test.mjs\"",
+    "reset": "node example-infra/reset.mjs",
+    "infra": "node example-infra/infractl.mjs",
+    "audit:report": "node scripts/audit-report.mjs",
+    "verify-chain": "node scripts/verify-chain.mjs"
+  }
+}

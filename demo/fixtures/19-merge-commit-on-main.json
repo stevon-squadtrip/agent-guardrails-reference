@@ -1,0 +1,6 @@
+{
+  "name": "commit that concludes a merge on main",
+  "expect": "allow",
+  "branch": "main", "merging": true,
+  "event": { "tool_name": "Bash", "tool_input": { "command": "git commit --no-edit" } }
+}

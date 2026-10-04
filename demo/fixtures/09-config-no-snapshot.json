@@ -1,0 +1,5 @@
+{
+  "name": "set prod config, no snapshot",
+  "expect": "deny",
+  "event": { "tool_name": "Bash", "tool_input": { "command": "node example-infra/infractl.mjs config set --env prod MAX_CONNECTIONS=200" } }
+}

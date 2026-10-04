@@ -1,0 +1,6 @@
+{
+  "name": "set prod config after snapshot",
+  "expect": "ask",
+  "setup": [{ "tool_name": "Bash", "tool_input": { "command": "node example-infra/infractl.mjs config snapshot --env prod" }, "tool_response": { "stdout": "saved snapshot prod-20260101T000000000Z (3 keys)\n[infractl] action=config.snapshot env=prod id=prod-20260101T000000000Z", "stderr": "" } }],
+  "event": { "tool_name": "Bash", "tool_input": { "command": "node example-infra/infractl.mjs config set --env prod MAX_CONNECTIONS=200" } }
+}

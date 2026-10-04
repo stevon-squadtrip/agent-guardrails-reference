@@ -1,0 +1,5 @@
+{
+  "name": "rm -rf build output",
+  "expect": "allow",
+  "event": { "tool_name": "Bash", "tool_input": { "command": "rm -rf build/" } }
+}

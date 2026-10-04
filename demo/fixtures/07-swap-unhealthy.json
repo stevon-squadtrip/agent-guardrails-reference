@@ -1,0 +1,6 @@
+{
+  "name": "swap prod, standby unhealthy",
+  "expect": "deny",
+  "setup": [{ "tool_name": "Bash", "tool_input": { "command": "node example-infra/infractl.mjs health --env prod --slot standby" }, "tool_response": { "stdout": "prod standby: build 43 is unhealthy\n[infractl] action=health env=prod slot=standby build=43 result=unhealthy", "stderr": "" } }],
+  "event": { "tool_name": "Bash", "tool_input": { "command": "node example-infra/infractl.mjs swap --env prod" } }
+}

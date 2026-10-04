@@ -1,0 +1,5 @@
+{
+  "name": "redirect into precondition records",
+  "expect": "deny",
+  "event": { "tool_name": "Bash", "tool_input": { "command": "echo '{}' > .claude/state/session-abc.json" } }
+}

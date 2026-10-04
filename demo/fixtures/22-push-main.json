@@ -1,0 +1,6 @@
+{
+  "name": "push to main",
+  "expect": "ask",
+  "branch": "fix/timeout",
+  "event": { "tool_name": "Bash", "tool_input": { "command": "git push origin main" } }
+}

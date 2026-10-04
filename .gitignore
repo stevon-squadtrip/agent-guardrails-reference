@@ -1,0 +1,5 @@
+node_modules/
+.claude/state/
+.claude/audit/
+.claude/settings.local.json
+example-infra/state/

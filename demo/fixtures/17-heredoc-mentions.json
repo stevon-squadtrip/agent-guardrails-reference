@@ -1,0 +1,5 @@
+{
+  "name": "heredoc body mentions destroy prod",
+  "expect": "allow",
+  "event": { "tool_name": "Bash", "tool_input": { "command": "cat > runbook.md <<'EOF'\nNever run: infractl env destroy --env prod\nEOF" } }
+}

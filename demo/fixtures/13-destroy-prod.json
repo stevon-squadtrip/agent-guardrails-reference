@@ -1,0 +1,5 @@
+{
+  "name": "destroy prod",
+  "expect": "deny",
+  "event": { "tool_name": "Bash", "tool_input": { "command": "node example-infra/infractl.mjs env destroy --env prod" } }
+}
